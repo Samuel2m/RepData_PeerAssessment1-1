@@ -265,6 +265,8 @@ dat_tbl_summary = dat_tbl[, list(total_steps = sum(steps, na.rm = T)),
 <li> Calculate and report the mean and median total number of steps taken per day</li>
 </ol>
 
+<p><strong>Note: Mean and Median Are Reported In Legend Of Histogram</strong></p>
+
 <pre><code class="r">#Making The Generation of This Plot Into A Function So I Can Re-use Later
 gen_hist = function(x, title){
         hist(x, 
@@ -393,6 +395,8 @@ head(dat_tbl_summary_miss)
 <ol>
 <li> Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?</li>
 </ol>
+
+<p><strong>Note: Mean and Median Are Reported In Legend Of Histogram</strong></p>
 
 <pre><code class="r">gen_hist(dat_tbl_summary$total_steps, &#39;Missing Values Removed&#39;)
 </code></pre>
